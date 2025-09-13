@@ -15,4 +15,27 @@ dotnet nuget add source "https://nuget.pkg.github.com/<SEU_USUARIO_OU_ORG>/index
     --name github \
     --username <SEU_USUARIO_OU_ORG> \
     --password <TOKEN_GITHUB> \
-    --store-password-in-clear-text
+    --store-password-in-clear-tex
+````
+
+### 2. Instale o pacote
+Depois de configurar a source, você pode instalar o pacote normalmente:
+
+```bash
+dotnet new install MinhaEmpresa.API.Blueprint::<versão>
+````
+ou, se for consumir como biblioteca NuGet:
+```bash
+dotnet add package MinhaEmpresa.API.Blueprint --version <versão>
+````
+
+### 3. Atualizar o pacote
+Para atualizar para a última versão:
+
+```bash
+dotnet new update
+````
+ou
+```bash
+dotnet add package MinhaEmpresa.API.Blueprint --version x.y.z
+````
