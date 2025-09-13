@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Carolina Fantini",
+  "classifications": [ "Web", "API" ],
+  "identity": "APIBlueprint.CSharp",
+  "name": "API Blueprint",
+  "shortName": "apiblueprint",
+  "sourceName": "APIBlueprint",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
