@@ -39,12 +39,9 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
         run: dotnet pack --configuration Release -p:PackageVersion=${{ env.PACKAGE_VERSION }} -o ./artifacts
 
-      - name: Set repository name
-        run: echo "REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)" >> $GITHUB_ENV
-
       - name: Add GitHub NuGet source (repo feed)
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
-        run: dotnet nuget add source "https://nuget.pkg.github.com/${{ github.repository_owner }}/${{ env.REPO_NAME }}/index.json" --name github --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
+        run: dotnet nuget add source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --name github --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
 
       - name: Publish to GitHub Packages
         if: startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
