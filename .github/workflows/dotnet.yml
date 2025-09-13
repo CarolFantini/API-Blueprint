@@ -1,4 +1,6 @@
-name: .NET Build & Publish
+name: .NET Build & Publish + Package Publish
+
+# TODO: Separar o Package Publish
 
 on:
   push:
@@ -7,6 +9,9 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      packages: write
     strategy:
       matrix:
         os: [ubuntu-latest, windows-2022]
