@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36429.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API-Blueprint", "API-Blueprint\API-Blueprint.csproj", "{840DA848-2292-4B0C-A81F-C172164DF93A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Blueprint", "API_Blueprint\API_Blueprint.csproj", "{840DA848-2292-4B0C-A81F-C172164DF93A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{A478FF49-4023-4142-9DE9-1DD66405C5E0}"
 EndProject

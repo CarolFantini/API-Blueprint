@@ -7,5 +7,4 @@
         Task UpdateAsync<T>(T entity, string? collectionName = null) where T : class;
         Task DeleteAsync<T>(T entity, string? collectionName = null) where T : class;
     }
-
 }
