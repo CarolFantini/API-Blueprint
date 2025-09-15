@@ -3,7 +3,7 @@
     <PackageId>API_Blueprint</PackageId>
     <Version>2.0.0</Version>
     <Authors>Carolina</Authors>
-      <RepositoryUrl>https://github.com/CarolFantini/API-Blueprint</RepositoryUrl>
+      <RepositoryUrl>https://github.com/CarolFantini/API_Blueprint</RepositoryUrl>
     <PackageType>Template</PackageType>
     <TargetFramework>net8.0</TargetFramework>
     <Description>Template de API corporativa</Description>
