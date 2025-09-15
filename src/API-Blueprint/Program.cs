@@ -1,3 +1,6 @@
+using Infrastructure.DependencyInjection;
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +8,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "API Template",
+        Description = "Template de API",
+        Contact = new OpenApiContact
+        {
+            Email = "example@example.com",
+            Url = new Uri("https://example.com")
+        }
+    });
+});
+
+// Add services to the container.
+builder.Services.InfraInjection(builder.Configuration);
 
 var app = builder.Build();
 

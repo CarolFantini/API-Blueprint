@@ -1,7 +1,6 @@
 # API Blueprint Template
 
-Este repositório contém um **template de API em .NET 8** para inicializar rapidamente novos projetos.  
-O pacote está disponível de forma privada no **GitHub Packages**.
+Este repositório contém um **template de API em .NET 8** para inicializar rapidamente novos projetos. O pacote está disponível de forma privada no **GitHub Packages**.
 
 ---
 
@@ -11,7 +10,7 @@ O pacote está disponível de forma privada no **GitHub Packages**.
 No terminal, adicione o repositório do seu usuário/organização como fonte do NuGet:
 
 ```bash
-dotnet nuget add source "https://nuget.pkg.github.com/<SEU_USUARIO_OU_ORG>/index.json" \
+dotnet nuget add source "https://nuget.pkg.github.com/CarolFantini/index.json" \
     --name github \
     --username <SEU_USUARIO_OU_ORG> \
     --password <TOKEN_GITHUB> \
