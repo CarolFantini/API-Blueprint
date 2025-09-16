@@ -11,9 +11,10 @@
     "language": "C#",
     "type": "project"
   },
-    "exclude": [
-    "template.csproj",
-    ".git",
-    ".git/**"
+    "sources": [
+    {
+      "source": "./",
+      "exclude": [ "template.csproj", ".git/**/*", ".template.config/**/*" ]
+    }
   ]
 }
