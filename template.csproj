@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageId>API_Blueprint</PackageId>
-    <Version>4.0.0</Version>
+    <Version>5.0.0</Version>
     <Authors>Carolina Fantini</Authors>
     <RepositoryUrl>https://github.com/CarolFantini/API_Blueprint</RepositoryUrl>
     <PackageType>Template</PackageType>

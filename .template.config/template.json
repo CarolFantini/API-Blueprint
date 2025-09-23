@@ -14,7 +14,7 @@
     "sources": [
     {
       "source": "./",
-      "exclude": [ "template.csproj", ".git/**/*", ".template.config/**/*" ]
+      "exclude": [ "template.csproj", ".git/**/*", ".template.config/**/*", ".github/workflows/publish_package.yml" ]
     }
   ]
 }
